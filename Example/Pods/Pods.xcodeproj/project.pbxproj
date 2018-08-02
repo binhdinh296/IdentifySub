@@ -16,10 +16,9 @@
 		A27F1D91A080524CEBFB1B999874613C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AAECDCE7A946EDA89D80471B6EF9CB9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B9698284166835C511324E18F199F2C8 /* Pods-IdentifySub_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B882CB76CD0289E86E5EE9401F1CBE3 /* Pods-IdentifySub_Tests-dummy.m */; };
-		F2AC8AAF1E75E34D84168211B18F3355 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD879A28985DA0D1E244C370AB871A4 /* ReplaceMe.swift */; };
 		FB4C9E882112C76000D3E6CC /* MySDKCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4C9E842112C76000D3E6CC /* MySDKCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB4C9E892112C76000D3E6CC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C9E852112C76000D3E6CC /* Config.swift */; };
-		FB4C9E8A2112C76000D3E6CC /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C9E862112C76000D3E6CC /* Services.swift */; };
+		FB4C9E8A2112C76000D3E6CC /* IdentifySub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C9E862112C76000D3E6CC /* IdentifySub.swift */; };
 		FB4C9E8B2112C76000D3E6CC /* MySDKCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4C9E872112C76000D3E6CC /* MySDKCrypto.m */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		8D74666D6AEE1B3E899840481F72BFBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9200888B138931AA39BA35464F378CFF /* Pods-IdentifySub_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IdentifySub_Example-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BD879A28985DA0D1E244C370AB871A4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = IdentifySub/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		A04FEAFB76C7C19BC7795C20E96431A8 /* Pods_IdentifySub_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdentifySub_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35A0B780A5B985D375D5D6AB7AA457B /* IdentifySub-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IdentifySub-prefix.pch"; sourceTree = "<group>"; };
 		AFAFC46A7AF05A4948383EEB1445F901 /* Pods-IdentifySub_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IdentifySub_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -78,7 +76,7 @@
 		F9507B0D394AD02FE11E0AA1D4FC49D6 /* Pods-IdentifySub_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IdentifySub_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FB4C9E842112C76000D3E6CC /* MySDKCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySDKCrypto.h; path = IdentifySub/Classes/MySDKCrypto.h; sourceTree = "<group>"; };
 		FB4C9E852112C76000D3E6CC /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = IdentifySub/Classes/Config.swift; sourceTree = "<group>"; };
-		FB4C9E862112C76000D3E6CC /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Services.swift; path = IdentifySub/Classes/Services.swift; sourceTree = "<group>"; };
+		FB4C9E862112C76000D3E6CC /* IdentifySub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentifySub.swift; path = IdentifySub/Classes/IdentifySub.swift; sourceTree = "<group>"; };
 		FB4C9E872112C76000D3E6CC /* MySDKCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySDKCrypto.m; path = IdentifySub/Classes/MySDKCrypto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,11 +147,10 @@
 		348AD9F6F3B924FE11399E2F6257B249 /* IdentifySub */ = {
 			isa = PBXGroup;
 			children = (
-				9BD879A28985DA0D1E244C370AB871A4 /* ReplaceMe.swift */,
-				FB4C9E852112C76000D3E6CC /* Config.swift */,
 				FB4C9E842112C76000D3E6CC /* MySDKCrypto.h */,
 				FB4C9E872112C76000D3E6CC /* MySDKCrypto.m */,
-				FB4C9E862112C76000D3E6CC /* Services.swift */,
+				FB4C9E852112C76000D3E6CC /* Config.swift */,
+				FB4C9E862112C76000D3E6CC /* IdentifySub.swift */,
 				E7EA5E61C15BE6289C96F66BE7120C81 /* Pod */,
 				35096C75BE80A10ACE66A538274D7406 /* Support Files */,
 			);
@@ -357,8 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3874475CABE2A9308223CAEAB42C2A4D /* IdentifySub-dummy.m in Sources */,
-				FB4C9E8A2112C76000D3E6CC /* Services.swift in Sources */,
-				F2AC8AAF1E75E34D84168211B18F3355 /* ReplaceMe.swift in Sources */,
+				FB4C9E8A2112C76000D3E6CC /* IdentifySub.swift in Sources */,
 				FB4C9E8B2112C76000D3E6CC /* MySDKCrypto.m in Sources */,
 				FB4C9E892112C76000D3E6CC /* Config.swift in Sources */,
 			);
