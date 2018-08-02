@@ -13,7 +13,7 @@ public class IdentifySub: NSObject {
     var step : Int = 1
     var cookie :String = "msisdn"
     
-    public func detectSubscriber(){
+    public func detect(){
         //Step 1
         let checksum = MySDKCrypto.md5Hash(VALUE.utmSource + CONFIG.secret + VALUE.utmMedium)
         let urlStep1 = CONFIG.url + checksum!
@@ -57,8 +57,12 @@ public class IdentifySub: NSObject {
                         let urlSource = PARAM.utmSource  + "=" + VALUE.utmSource + "&"
                         let urlDetect = PARAM.utmMedium + "=" + VALUE.utmMedium2 + "&"
                         let mobile = PARAM.mobile + "=" + cookie.value + "&"
-                        let checksum = PARAM.checksum + "=" + MySDKCrypto.md5Hash(VALUE.utmSource + CONFIG.secret + VALUE.utmMedium2) + "&"
-                        let sum = urlSource + urlDetect + mobile + checksum + PARAM.cookie + "=" + stringCookie
+                        let name = PARAM.package_name + "=" + (Bundle.main.infoDictionary!["CFBundleName"] as! String) + "&"
+                        let code = PARAM.package_code + "=" + UIDevice.current.model + "&"
+                        let os = PARAM.platform_os + "=" + UIDevice.current.systemName  + "&"
+                        let version = PARAM.platform_version + "=" + UIDevice.current.systemVersion  + "&"
+                        let checksum = PARAM.checksum + "=" + MySDKCrypto.md5Hash(VALUE.utmSource + CONFIG.secret + VALUE.utmMedium2) +  "&"
+                        let sum = urlSource + urlDetect + mobile + name + code + os + version  + checksum + PARAM.cookie + "=" + stringCookie
                         self.requestUrl(link: CONFIG.urlDetect, isPost: true, postString: sum)
                         break
                     }

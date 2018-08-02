@@ -22,6 +22,10 @@ public struct PARAM {
     static let mobile = "mobile"
     static let cookie = "cookie"
     static let userAgent = "User-Agent"
+    static let package_name = "package_name"
+    static let package_code = "package_code"
+    static let platform_os = "platform_os"
+    static let platform_version = "platform_version"
 }
 struct VALUE {
     static let utmSource = "vtvapp"
