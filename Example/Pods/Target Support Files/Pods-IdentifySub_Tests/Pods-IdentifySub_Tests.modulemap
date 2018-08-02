@@ -1,0 +1,6 @@
+framework module Pods_IdentifySub_Tests {
+  umbrella header "Pods-IdentifySub_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

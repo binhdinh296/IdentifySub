@@ -1,0 +1,16 @@
+PODS:
+  - IdentifySub (0.1.0)
+
+DEPENDENCIES:
+  - IdentifySub (from `../`)
+
+EXTERNAL SOURCES:
+  IdentifySub:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IdentifySub: 6cbe4fe5a7919735d109fab64240696941f0b879
+
+PODFILE CHECKSUM: e6caeb82e53672d20f5c33c98069a0805933d973
+
+COCOAPODS: 1.5.0

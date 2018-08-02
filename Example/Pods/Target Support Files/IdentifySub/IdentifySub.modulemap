@@ -1,0 +1,6 @@
+framework module IdentifySub {
+  umbrella header "IdentifySub-umbrella.h"
+
+  export *
+  module * { export * }
+}
