@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IdentifySub_Example' do
+  pod 'IdentifySub', :path => '../'
+
+  target 'IdentifySub_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
