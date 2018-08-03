@@ -14,7 +14,7 @@ public class IdentifySub: NSObject {
     var cookie :String = "msisdn"
     
     func infoApp()->String{
-        let name = PARAM.package_name + "=" + (Bundle.main.infoDictionary!["CFBundleName"] as! String) + "&"
+        let name = PARAM.package_name + "=" + Bundle.main.bundleIdentifier! + "&"
         let code = PARAM.package_code + "=" + UIDevice.current.model + "&"
         let os = PARAM.platform_os + "=" + UIDevice.current.systemName  + "&"
         let version = PARAM.platform_version + "=" + UIDevice.current.systemVersion
