@@ -69,7 +69,7 @@ public class IdentifySub: NSObject {
                     //print("name: \(cookie.name) value: \(cookie.value)")
                 }
             }
-            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            //let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             //print("responseString = \(String(describing: responseString))")
             do {
                 if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
