@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IdentifySub'
-  s.version          = '0.1.1'
+  s.version          = '0.0.1'
   s.summary          = 'Nhận diện thuê bao'
 
 # This description is used to generate tags and improve search results.
