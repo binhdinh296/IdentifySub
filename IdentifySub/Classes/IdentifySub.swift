@@ -13,14 +13,12 @@ public class IdentifySub: NSObject {
     var step : Int = 1
     var cookie :String = "msisdn"
     
-    public func detect(){
-        //Step 1
+    public func  detect(){
         let checksum = MySDKCrypto.md5Hash(VALUE.utmSource + CONFIG.secret + VALUE.utmMedium)
         let urlStep1 = CONFIG.url + checksum!
         requestUrl(link: urlStep1,isPost: false,postString: nil)
     }
     
-    /*    CheckSum MD5  */
     func requestUrl(link:String ,isPost:Bool,postString:String?){
         let myUrl = NSURL(string: link);
         let cookies=HTTPCookieStorage.shared.cookies(for: myUrl! as URL)
